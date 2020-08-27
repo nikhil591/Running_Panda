@@ -1,0 +1,54 @@
+	body 
+{
+	background-image: url('sky.jpg');
+	margin : 0px;
+}
+
+
+#sun img {
+  float: left;
+	height: 200px;
+
+}
+
+#road {
+	margin-top :470px;
+	height: 170px;
+	background: url(grass.svg);
+	border-bottom: 7px solid green;
+}
+#runner {
+	margin-top:430px;
+	background: url(runner-panda.png);
+	width:177px; 
+	height:149px;
+	float: left;
+	animation: walk 1s steps(9) infinite,
+				forward 6s linear infinite;
+
+}
+@keyframes walk{
+	{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 1600px;
+	}
+}
+@keyframes forward{
+	{
+		transform: translateX(-100px)
+	}
+	100%{
+		transform: translateX(1150px);
+           }
+}
+#text {
+	height: 120px;
+	color: black;
+        text-shadow: 1px 1px red;
+	font: 200% Anton, Sans Serif;
+	text-align: center;
+	
+}
+
